@@ -1,0 +1,29 @@
+Pycharm 설치
+https://www.jetbrains.com/pycharm/download/#section=windows
+
+django 설치
+pip install django
+
+test project 생성 (Anaconda Prompt)
+django-admin.py startproject testproject
+
+Pycharm 실행
+File > Open > testproject > OK
+Run > Edit Configurations > Name,Script Path=project의 manage.py 위치, Parameters=runserver, Python interpreter 입력 > OK
+Run > Run '$Name'
+
+C:\Anaconda3\python.exe C:/Users/jilee/study/python/myproject/testprojectect/manage.py runserver
+Performing system checks...
+
+Watching for file changes with StatReloader
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 28, 2020 - 16:30:11
+Django version 3.0.2, using settings 'testprojectect.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+http://127.0.0.1:8000/ 접속 확인.
+
