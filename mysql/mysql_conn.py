@@ -1,10 +1,12 @@
 import pymysql
 
+
+
 HOST='192.168.0.47'
 PORT=9001
 USER='jilee'
 PASSWORD='Mynamepass123!@#'
-DBNAME='testdb'
+DBNAME='blogdb'
 
 def connect_to_mysql():
     CONN = pymysql.connect(host=HOST, port=PORT, user=USER,
@@ -20,6 +22,8 @@ def main():
     else:
         print('DB Connection Success')
         CONN.close()
+    finally:
+        pymysql.install_as_MySQLdb()
 
 if __name__ == '__main__':
     main()

@@ -1,5 +1,5 @@
-import mysql_conn
 import pymysql
+import mysql_conn
 
 q1='select * from test'
 
