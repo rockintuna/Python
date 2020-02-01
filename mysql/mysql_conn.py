@@ -2,7 +2,7 @@ import pymysql
 
 
 
-HOST='192.168.0.47'
+HOST='192.168.0.5'
 PORT=9001
 USER='jilee'
 PASSWORD='Mynamepass123!@#'
