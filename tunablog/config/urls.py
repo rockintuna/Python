@@ -19,9 +19,9 @@ from django.urls import path
 from blog.views import post_list,post_detail,post_add,post_delete
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^$', post_list),
-    url(r'post/(?P<pk>\d+)/', post_detail),
-    url(r'post/add/', post_add, name='post_add'),
-    url(r'post/(?P<pk>\d+)/delete/$', post_delete, name='post_delete'),
+    url(r'^post/(?P<pk>\d+)/$', post_detail),
+    url(r'^post/add/$', post_add, name='post_add'),
+    url(r'^post/(?P<pk>\d+)/delete/$', post_delete, name='post_delete'),
 ]
