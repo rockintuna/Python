@@ -12,8 +12,12 @@
 </head>
 <body>
     <div class="header">
-            <h1>JeongCham's Blog</h1>
+        <a class="home" href="/"><h1>JeongCham's Blog</h1></a>
+        <a class="add-post" href="{% url 'post_add' %}">
+            <button type="button" class="btn btn-info">Add Post</button>
+        </a>
     </div>
+
     <div class="recent">Recent Posts</div>
     {% block content %}
     {% endblock %}
