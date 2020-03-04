@@ -16,12 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-from blog.views import post_list,post_detail,post_add,post_delete
+from blog.views import post_list,post_detail,post_add,post_delete,post_menu
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', post_list),
+    url(r'^menu$', post_menu, name='post_menu'),
     url(r'^post/(?P<pk>\d+)/$', post_detail),
     url(r'^post/add/$', post_add, name='post_add'),
     url(r'^post/(?P<pk>\d+)/delete/$', post_delete, name='post_delete'),
+
 ]

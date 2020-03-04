@@ -50,3 +50,6 @@ def post_delete(request, pk):
 
     elif request.method == 'GET':
         return HttpResponse('잘못된 접근 입니다.')
+
+def post_menu(request):
+    return render(request, 'blog/post_menu.html')
